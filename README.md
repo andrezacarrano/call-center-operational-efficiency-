@@ -13,6 +13,11 @@ O notebook `callmemaybe.ipynb` analisa a qualidade dos dados, a performance de a
 - construção de um score de ineficiência
 - testes estatísticos para validar diferenças entre grupos
 
+## 📊 Principais Insights
+- A ineficiência está concentrada na perda de chamadas e no tempo de espera
+- Operadores críticos apresentam desempenho significativamente inferior
+- A atividade outbound não impacta significativamente a performance
+
 ## 📁 Estrutura do projeto
 
 - `callmemaybe.ipynb` — notebook principal com a análise completa
