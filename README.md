@@ -29,8 +29,8 @@ O notebook `callmemaybe.ipynb` analisa a qualidade dos dados, a performance de a
 
 ## 🔗 Links importantes
 
-- Link do relatório CAR: [COLE O LINK AQUI](#)
-- Link do Dashboard no Tableau: [COLE O LINK AQUI](#)
+- Link do relatório CAR: (https://public.tableau.com/views/AnlisedeIneficinciaOperacionaldoCallCenter/Dashboard1?:language=pt-BR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- Link do Dashboard no Tableau: (https://drive.google.com/drive/folders/17Zlbq1LWB6XZPcSDyg5hTgnFHx8gOFYd?usp=sharing)
 
 ## 📝 Observações
 
