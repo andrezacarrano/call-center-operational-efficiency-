@@ -1,39 +1,75 @@
-# CallMeMaybe — Análise de Desempenho Operacional
+# CallMeMaybe — Análise de Eficiência Operacional do Call Center
 
-Este repositório contém a análise de desempenho operacional da CallMeMaybe com base em dados de chamadas.
+Este projeto apresenta uma análise completa da eficiência operacional de um call center, com foco na identificação de gargalos, operadores críticos e oportunidades de melhoria no atendimento.
+
+---
 
 ## 🎯 Objetivo
 
-O notebook `callmemaybe.ipynb` analisa a qualidade dos dados, a performance de atendimento, os padrões de chamadas inbound/outbound e a eficiência dos operadores. A análise inclui:
+Avaliar o desempenho operacional das chamadas e identificar os principais fatores de ineficiência, com base em:
 
-- verificação e limpeza dos dados
-- criação de indicadores operacionais (KPIs)
-- segmentação de chamadas internas e externas
-- identificação de operadores com melhor e pior desempenho
-- construção de um score de ineficiência
-- testes estatísticos para validar diferenças entre grupos
+* taxa de chamadas perdidas
+* tempo de espera
+* comportamento inbound vs outbound
+* desempenho individual dos operadores
+
+A análise busca apoiar decisões para melhoria da experiência do cliente e otimização da operação.
+
+---
+
+## 📊 Principais entregas
+
+* Construção de KPIs operacionais (volume, taxa de outbound, duração média)
+* Criação de um **score de ineficiência** baseado em múltiplos fatores
+* Identificação dos operadores mais críticos
+* Análise comparativa entre diferentes tipos de chamadas
+* Validação estatística das hipóteses com testes de significância
+* Dashboard interativo no Tableau
+
+---
 
 ## 📁 Estrutura do projeto
 
-- `callmemaybe.ipynb` — notebook principal com a análise completa
-- `telecom_dataset_new.csv` — dados das chamadas
-- `telecom_clients.csv` — informações de clientes relacionadas
-- `decomposicao.md` — material auxiliar de decomposição (se aplicável)
-- `df_calls_exportado_do_notebook.csv`, `df_ops_exportado_do_notebook.csv`, `kpi_ops_final.csv` — arquivos de exportação gerados pelo notebook
+* `callmemaybe.ipynb` — análise completa (EDA, KPIs e modelagem do score)
+* `telecom_dataset_new.csv` — base principal de chamadas
+* `telecom_clients.csv` — dados complementares de clientes
+* `kpi_ops_final.csv` — dataset consolidado com métricas por operador
+* `df_calls_exportado_do_notebook.csv`, `df_ops_exportado_do_notebook.csv` — bases tratadas
 
-## ▶️ Como usar
+---
 
-1. Abra `callmemaybe.ipynb` no Jupyter Notebook ou JupyterLab.
-2. Execute as células na ordem apresentada.
-3. Certifique-se de que os arquivos CSV estão no mesmo diretório do notebook.
+## ▶️ Como executar
 
-## 🔗 Links importantes
+1. Abra o notebook `callmemaybe.ipynb` em Jupyter Notebook ou JupyterLab
+2. Execute as células em sequência
+3. Garanta que os arquivos CSV estejam no mesmo diretório
 
-- Link do relatório CAR: [COLE O LINK AQUI](#)
-- Link do Dashboard no Tableau: [COLE O LINK AQUI](#)
+---
 
-## 📝 Observações
+## 🔗 Visualizações
 
-- As análises foram feitas com `pandas`, `numpy`, `matplotlib`, `seaborn` e `scipy`.
-- Se necessário, atualize os caminhos dos dados no notebook caso os arquivos sejam movidos.
-- O README está formatado para ser compatível com o fluxo do notebook e para registrar facilmente os links finais de relatório e dashboard.
+* 📊 Dashboard Tableau: https://public.tableau.com/views/AnlisedeIneficinciaOperacionaldoCallCenter/Dashboard1?:language=pt-BR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+* 📄 Relatório CAR: https://drive.google.com/drive/folders/17Zlbq1LWB6XZPcSDyg5hTgnFHx8gOFYd?usp=sharing
+
+---
+
+## 🧠 Tecnologias utilizadas
+
+* Python (pandas, numpy)
+* Visualização: matplotlib, seaborn
+* Estatística: scipy
+* BI: Tableau
+
+---
+
+## 📌 Principais insights
+
+* A ineficiência operacional está fortemente associada à **alta taxa de chamadas perdidas** e ao **tempo de espera elevado**
+* Operadores com maior score de ineficiência apresentam desempenho significativamente inferior
+* A atividade outbound não demonstrou impacto relevante na diferenciação de performance
+
+---
+
+## 🚀 Conclusão
+
+Os resultados indicam oportunidades claras de melhoria operacional, especialmente na redução de perdas e otimização do tempo de espera, fatores diretamente ligados à experiência do cliente e eficiência do atendimento.
